@@ -1,8 +1,129 @@
 <!DOCTYPE html>
-<html>
-  <head><title>Mi portafolio</title></head>
-  <body>
-    <h1>Hola, soy [tu nombre]</h1>
-    <p>Portafolio en construcción...</p>
-  </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sara Gaviria Escobar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================
+       MENÚ LATERAL IZQUIERDO
+       Para agregar un proyecto nuevo:
+       1. Copia una línea <li><a href="...">...</a></li>
+       2. El href debe apuntar al archivo del proyecto, ej: "proyectos/nombre-proyecto.html"
+       3. El texto entre > y </a> es el nombre que aparece en el menú
+  ============================== -->
+  <nav class="sidebar">
+    <div class="sidebar-name">
+      <a href="index.html">Sara Gaviria Escobar</a>
+    </div>
+
+    <ul class="project-list">
+      <!-- ✏️ PROYECTOS: reemplaza cada línea con tus proyectos reales -->
+      <li><a href="proyectos/proyecto-1.html">— Nombre del Proyecto 1</a></li>
+      <li><a href="proyectos/proyecto-2.html">— Nombre del Proyecto 2</a></li>
+      <li><a href="proyectos/proyecto-3.html">— Nombre del Proyecto 3</a></li>
+      <li><a href="proyectos/proyecto-4.html">— Nombre del Proyecto 4</a></li>
+      <!-- ➕ Agrega más proyectos aquí copiando el formato de arriba -->
+    </ul>
+
+    <ul class="nav-extra">
+      <li><a href="about.html">About me</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============================
+       CONTENIDO PRINCIPAL
+  ============================== -->
+  <main class="main-content">
+
+    <!-- Nombre grande en la parte superior -->
+    <header class="hero">
+      <h1>Sara Gaviria<br><span class="last-name">Escobar</span></h1>
+      <!-- ✏️ Puedes agregar una línea corta debajo de tu nombre si quieres -->
+      <p class="tagline">Biodesign</p>
+    </header>
+
+    <!-- ============================
+         GRILLA DE PROYECTOS
+         Para agregar un proyecto nuevo:
+         1. Copia un bloque <div class="project-card">...</div>
+         2. Cambia el href al archivo del proyecto
+         3. Cambia src="..." a la ruta de la imagen del proyecto
+         4. Cambia el <h2> con el nombre del proyecto
+         5. Cambia el <p> con una descripción breve (1-2 líneas)
+    ============================== -->
+    <section class="projects-grid">
+
+      <div class="project-card">
+        <a href="proyectos/proyecto-1.html">
+          <!-- ✏️ Reemplaza con tu imagen: ponla en la carpeta "imagenes/" -->
+          <div class="project-img-wrap">
+            <img src="imagenes/proyecto-1.jpg" alt="Nombre del Proyecto 1" />
+            <div class="project-overlay">
+              <span>Ver proyecto →</span>
+            </div>
+          </div>
+          <h2>Nombre del Proyecto 1</h2>
+          <p class="project-caption">Descripción breve del proyecto. Una o dos líneas.</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="proyectos/proyecto-2.html">
+          <div class="project-img-wrap">
+            <img src="imagenes/proyecto-2.jpg" alt="Nombre del Proyecto 2" />
+            <div class="project-overlay">
+              <span>Ver proyecto →</span>
+            </div>
+          </div>
+          <h2>Nombre del Proyecto 2</h2>
+          <p class="project-caption">Descripción breve del proyecto. Una o dos líneas.</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="proyectos/proyecto-3.html">
+          <div class="project-img-wrap">
+            <img src="imagenes/proyecto-3.jpg" alt="Nombre del Proyecto 3" />
+            <div class="project-overlay">
+              <span>Ver proyecto →</span>
+            </div>
+          </div>
+          <h2>Nombre del Proyecto 3</h2>
+          <p class="project-caption">Descripción breve del proyecto. Una o dos líneas.</p>
+        </a>
+      </div>
+
+      <div class="project-card">
+        <a href="proyectos/proyecto-4.html">
+          <div class="project-img-wrap">
+            <img src="imagenes/proyecto-4.jpg" alt="Nombre del Proyecto 4" />
+            <div class="project-overlay">
+              <span>Ver proyecto →</span>
+            </div>
+          </div>
+          <h2>Nombre del Proyecto 4</h2>
+          <p class="project-caption">Descripción breve del proyecto. Una o dos líneas.</p>
+        </a>
+      </div>
+
+      <!-- ➕ Agrega más tarjetas aquí copiando el bloque de arriba -->
+
+    </section>
+  </main>
+
+  <!-- Botón de menú para móvil -->
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.sidebar').classList.toggle('open');
+    }
+  </script>
+
+</body>
 </html>

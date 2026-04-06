@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ✏️ Cambia el título con el nombre real del proyecto -->
+  <title>Nombre del Proyecto — Sara Gaviria Escobar</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Mismo menú — nótese que los href ahora apuntan a "../" (una carpeta arriba) -->
+  <nav class="sidebar">
+    <div class="sidebar-name">
+      <a href="../index.html">Sara Gaviria Escobar</a>
+    </div>
+    <ul class="project-list">
+      <li><a href="../proyectos/proyecto-1.html">— Nombre del Proyecto 1</a></li>
+      <li><a href="../proyectos/proyecto-2.html">— Nombre del Proyecto 2</a></li>
+      <li><a href="../proyectos/proyecto-3.html">— Nombre del Proyecto 3</a></li>
+      <li><a href="../proyectos/proyecto-4.html">— Nombre del Proyecto 4</a></li>
+    </ul>
+    <ul class="nav-extra">
+      <li><a href="../about.html">About me</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <article class="project-page">
+
+      <a href="../index.html" class="back-link">← Todos los proyectos</a>
+
+      <!-- ✏️ Título del proyecto -->
+      <h1>Nombre del Proyecto</h1>
+
+      <!-- ✏️ Metadatos: año, materiales, categoría — borra lo que no aplique -->
+      <div class="project-meta">
+        <span>2024</span>
+        <span>Biodiseño</span>
+        <span>Material o técnica</span>
+      </div>
+
+      <!-- ✏️ Imagen principal / portada del proyecto -->
+      <div class="project-cover">
+        <img src="../imagenes/proyecto-1-cover.jpg" alt="Nombre del Proyecto" />
+      </div>
+
+      <!-- =============================================
+           CUERPO DEL PROYECTO
+           Puedes reorganizar, agregar o quitar secciones
+           según lo que necesite cada proyecto.
+      ============================================= -->
+      <div class="project-body">
+
+        <section>
+          <h2>Sobre el proyecto</h2>
+          <!-- ✏️ Descripción general del proyecto -->
+          <p>
+            Escribe aquí una descripción del proyecto. ¿De qué trata? ¿Cuál fue 
+            el punto de partida o la pregunta que lo motivó? Este es el lugar para 
+            dar el contexto general en 2-4 oraciones.
+          </p>
+        </section>
+
+        <section>
+          <h2>Proceso</h2>
+          <!-- ✏️ Habla del proceso de investigación, diseño o experimentación -->
+          <p>
+            Describe el proceso que seguiste. ¿Cómo investigaste? ¿Qué experimentos 
+            o iteraciones hiciste? ¿Cuáles fueron los momentos clave del desarrollo?
+          </p>
+        </section>
+
+        <!-- ✏️ Agrega imágenes del proceso. Puedes usar una imagen sola o la grilla de 2 -->
+        <img src="../imagenes/proyecto-1-proceso.jpg" alt="Proceso del proyecto" />
+
+        <!-- Para 2 imágenes lado a lado, usa esto:
+        <div class="image-grid">
+          <img src="../imagenes/proyecto-1-a.jpg" alt="Descripción imagen A" />
+          <img src="../imagenes/proyecto-1-b.jpg" alt="Descripción imagen B" />
+        </div>
+        -->
+
+        <section>
+          <h2>Materiales</h2>
+          <!-- ✏️ Lista de materiales, organismos, técnicas usadas -->
+          <p>
+            Describe los materiales o seres vivos involucrados. En biodiseño esto 
+            es especialmente relevante: ¿trabajaste con micelio, bacterias, fibras 
+            naturales, fermentación? ¿Qué herramientas o técnicas usaste?
+          </p>
+        </section>
+
+        <section>
+          <h2>Resultados</h2>
+          <!-- ✏️ Qué lograste, qué aprendiste, a dónde llevó el proyecto -->
+          <p>
+            ¿Qué resultó del proyecto? ¿Cuál fue el objeto, sistema, o conocimiento 
+            generado? Puedes mencionar también lo que no funcionó o lo que te 
+            sorprendió del proceso.
+          </p>
+        </section>
+
+        <!-- ✏️ Imagen final del resultado -->
+        <img src="../imagenes/proyecto-1-resultado.jpg" alt="Resultado del proyecto" />
+
+      </div><!-- /project-body -->
+
+    </article>
+  </main>
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.sidebar').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>

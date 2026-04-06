@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About me — Sara Gaviria Escobar</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Mismo menú que index.html — actualízalos siempre juntos -->
+  <nav class="sidebar">
+    <div class="sidebar-name">
+      <a href="index.html">Sara Gaviria Escobar</a>
+    </div>
+    <ul class="project-list">
+      <li><a href="proyectos/proyecto-1.html">— Nombre del Proyecto 1</a></li>
+      <li><a href="proyectos/proyecto-2.html">— Nombre del Proyecto 2</a></li>
+      <li><a href="proyectos/proyecto-3.html">— Nombre del Proyecto 3</a></li>
+      <li><a href="proyectos/proyecto-4.html">— Nombre del Proyecto 4</a></li>
+    </ul>
+    <ul class="nav-extra">
+      <li><a href="about.html">About me</a></li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+    <article class="about-page">
+
+      <a href="index.html" class="back-link">← Volver</a>
+
+      <!-- ✏️ Cambia por tu foto. Ponla en la carpeta "imagenes/" -->
+      <div class="about-photo">
+        <img src="imagenes/foto-perfil.jpg" alt="Sara Gaviria Escobar" />
+      </div>
+
+      <h1>About me</h1>
+
+      <div class="about-bio">
+        <!-- ✏️ Reemplaza con tu bio. Puedes tener varios párrafos -->
+        <p>
+          Hola, soy Sara Gaviria Escobar. Escribe aquí una presentación sobre ti: 
+          quién eres, de dónde vienes, en qué te especializas dentro del biodiseño.
+        </p>
+        <p>
+          Este es el segundo párrafo. Puedes hablar de tu formación, 
+          tus intereses, tu enfoque de trabajo, o lo que te llevó al biodiseño.
+        </p>
+        <p>
+          Y un tercer párrafo si lo necesitas. Algunos diseñadores también 
+          incluyen aquí colaboraciones, exposiciones, o reconocimientos.
+        </p>
+      </div>
+
+      <!-- ✏️ Links de contacto y redes — borra los que no uses -->
+      <div class="about-links">
+        <a href="mailto:tu@email.com">✉ tu@email.com</a>
+        <a href="https://www.instagram.com/tuusuario" target="_blank">↗ Instagram</a>
+        <a href="https://www.linkedin.com/in/tuusuario" target="_blank">↗ LinkedIn</a>
+        <!-- Agrega más links si quieres -->
+      </div>
+
+    </article>
+  </main>
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.sidebar').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>
