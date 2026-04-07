@@ -39,7 +39,7 @@
       <!-- Video section - demo of the game / project -->
       <div class="project-video" style="margin-bottom: 50px;">
         <video controls autoplay muted loop style="width: 100%; height: auto; border-radius: 4px;">
-          <source src="../videos/proyecto-1-demo.mp4" type="video/mp4">
+          <source src="imagenes/alegvideo" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         <p style="font-size: 0.78rem; color: var(--gray-mid); margin-top: 10px; text-align: center;">
