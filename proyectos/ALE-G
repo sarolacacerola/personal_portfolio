@@ -63,7 +63,7 @@
           </p>
         </section>
 
-        <img src="../imagenes/proyecto-1-proceso.jpg" alt="Process image" />
+        <img src="imagenes/alegcontrol1.png" alt="Process image" />
 
         <!-- Optional: second video for more detail -->
         <!--
@@ -71,11 +71,11 @@
           <video controls style="width: 100%;">
             <source src="../videos/proyecto-1-detail.mp4" type="video/mp4">
           </video>
-          <img src="../imagenes/proyecto-1-detail.jpg" alt="Detail image" />
+          <img src="imagenes/alegcontrol2.png" alt="Detail image" />
         </div>
         -->
 
-        <img src="../imagenes/proyecto-1-resultado.jpg" alt="Final result" />
+        <img src="imagenes/aleg.png" alt="Final result" />
 
       </div>
 
