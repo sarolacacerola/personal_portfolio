@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- ✏️ Cambia el título con el nombre real del proyecto -->
   <title>ALE-G</title>
   <link rel="stylesheet" href="../style.css" />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- Mismo menú — nótese que los href ahora apuntan a "../" (una carpeta arriba) -->
   <nav class="sidebar">
     <div class="sidebar-name">
       <a href="../index.html">Sara Gaviria Escobar</a>
@@ -28,33 +26,36 @@
   <main class="main-content">
     <article class="project-page">
 
-      <a href="../index.html" class="back-link">← Todos los proyectos</a>
+      <a href="../index.html" class="back-link">← All projects</a>
 
-      <!-- ✏️ Título del proyecto -->
       <h1>ALE-G</h1>
 
-      <!-- ✏️ Metadatos: año, materiales, categoría — borra lo que no aplique -->
       <div class="project-meta">
         <span>2025</span>
         <span>Biodesign</span>
         <span>Arduino + p5.js + videogame</span>
       </div>
 
-      <!-- ✏️ Imagen principal / portada del proyecto -->
-      <div class="project-cover">
-        <img src="../imagenes/proyecto-1-cover.jpg" alt="ALE-G" />
+      <!-- Video section - demo of the game / project -->
+      <div class="project-video" style="margin-bottom: 50px;">
+        <video controls autoplay muted loop style="width: 100%; height: auto; border-radius: 4px;">
+          <source src="../videos/proyecto-1-demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p style="font-size: 0.78rem; color: var(--gray-mid); margin-top: 10px; text-align: center;">
+          ALE-G gameplay demo / Biohybrid controller in action
+        </p>
       </div>
 
-      <!-- =============================================
-           CUERPO DEL PROYECTO
-           Puedes reorganizar, agregar o quitar secciones
-           según lo que necesite cada proyecto.
-      ============================================= -->
+      <!-- Project cover image (optional - you can keep or remove) -->
+      <div class="project-cover">
+        <img src="../imagenes/proyecto-1-cover.jpg" alt="ALE-G cover" />
+      </div>
+
       <div class="project-body">
 
         <section>
           <h2>About ALE-G</h2>
-          <!-- ✏️ Descripción general del proyecto -->
           <p>
             ALE-G is an artificial life ecosystem game that invites players to spend one minute inside a digital terrarium, and then live with the consequences of their choices. Inspired by Game of Life, Lenia, Undertale and other works that question player's ethical choices and blur the line between play and system thinking, the game simulates a living terrarium with twelve common species across plants, bacteria, fungi, and insects. Temperature, humidity, and pH shift in response to player actions, affecting the creature's metabolism, movement, and reproduction. An integrated recovery time equation based on real forest ecosystem data calculates how long the ecosystem takes to return to balance, revealing the weight of human intervention on a small scale that mirrors the planetary one. ALE-G is built in p5.js as open-source code, and was accompanied by a biohybrid controller built with arduino components and a bacterial cellulose cover, making the act of playing physically entangled with living matter. Rather than rewarding victory, the game asks: what does it mean to test, probe, and manipulate the more-than-human out of curiosity? And can we learn to interact without disconnecting?
 
@@ -62,20 +63,21 @@
           </p>
         </section>
 
-        <!-- ✏️ Agrega imágenes del proceso. Puedes usar una imagen sola o la grilla de 2 -->
-        <img src="../imagenes/proyecto-1-proceso.jpg" alt="Proceso del proyecto" />
+        <img src="../imagenes/proyecto-1-proceso.jpg" alt="Process image" />
 
-        <!-- Para 2 imágenes lado a lado, usa esto:
-        <div class="image-grid">
-          <img src="../imagenes/proyecto-1-a.jpg" alt="Descripción imagen A" />
-          <img src="../imagenes/proyecto-1-b.jpg" alt="Descripción imagen B" />
+        <!-- Optional: second video for more detail -->
+        <!--
+        <div class="image-grid" style="grid-template-columns: 1fr 1fr; gap: 20px;">
+          <video controls style="width: 100%;">
+            <source src="../videos/proyecto-1-detail.mp4" type="video/mp4">
+          </video>
+          <img src="../imagenes/proyecto-1-detail.jpg" alt="Detail image" />
         </div>
         -->
 
-        <!-- ✏️ Imagen final del resultado -->
-        <img src="../imagenes/proyecto-1-resultado.jpg" alt="Resultado del proyecto" />
+        <img src="../imagenes/proyecto-1-resultado.jpg" alt="Final result" />
 
-      </div><!-- /project-body -->
+      </div>
 
     </article>
   </main>
