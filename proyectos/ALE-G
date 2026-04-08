@@ -14,7 +14,7 @@
       <a href="/index.html">Sara Gaviria Escobar</a>
     </div>
     <ul class="project-list">
-      <li><a href="/proyectos/proyecto-1.html">— ALE-G</a></li>
+      <li><a href="/proyectos/ALE-G.html">— ALE-G</a></li>
       <li><a href="/proyectos/proyecto-2.html">— Kilim Letter</a></li>
       <li><a href="/proyectos/proyecto-3.html">— La Enredadera & co.</a></li>
     </ul>
@@ -49,7 +49,7 @@
 
       <!-- Project cover image (optional - you can keep or remove) -->
       <div class="project-cover">
-        <img src="/imagenes/proyecto-1-cover.jpg" alt="ALE-G cover" />
+        <img src="/imagenes/aleg.png" alt="ALE-G cover" />
       </div>
 
       <div class="project-body">
@@ -69,7 +69,7 @@
         <!--
         <div class="image-grid" style="grid-template-columns: 1fr 1fr; gap: 20px;">
           <video controls style="width: 100%;">
-            <source src="/videos/proyecto-1-detail.mp4" type="video/mp4">
+            <source src="/videos/alegvideo" type="video/mp4">
           </video>
           <img src="imagenes/alegcontrol2.png" alt="Detail image" />
         </div>
