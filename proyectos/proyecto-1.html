@@ -4,32 +4,68 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ALE-G</title>
-  <!-- ✅ CSS: ruta absoluta desde la raíz -->
   <link rel="stylesheet" href="/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    /* Estilos adicionales para las descripciones de imágenes */
+    .image-with-caption {
+      margin-bottom: 40px;
+    }
+    .image-with-caption img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .image-caption {
+      font-size: 0.75rem;
+      color: var(--gray-mid);
+      margin-top: 8px;
+      text-align: center;
+      font-family: var(--font-body);
+      line-height: 1.4;
+    }
+    .process-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin: 40px 0;
+    }
+    .video-container {
+      margin: 50px 0 30px;
+    }
+    .video-container video {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    @media (max-width: 700px) {
+      .process-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+  </style>
 </head>
 <body>
 
   <nav class="sidebar">
     <div class="sidebar-name">
-      <!-- ✅ Volver al inicio: ruta absoluta -->
       <a href="/index.html">Sara Gaviria Escobar</a>
     </div>
     <ul class="project-list">
-      <!-- ✅ Enlaces a OTROS proyectos: solo el nombre del archivo -->
       <li><a href="proyecto-1.html">— ALE-G</a></li>
       <li><a href="proyecto-2.html">— Kilim Letter</a></li>
       <li><a href="proyecto-3.html">— La Enredadera & co.</a></li>
     </ul>
     <ul class="nav-extra">
-      <!-- ✅ About: ruta absoluta -->
       <li><a href="/about.html">About me</a></li>
     </ul>
   </nav>
 
   <main class="main-content">
     <article class="project-page">
-      <!-- ✅ Volver atrás: ruta absoluta -->
+      
       <a href="/index.html" class="back-link">← All projects</a>
 
       <h1>ALE-G</h1>
@@ -40,19 +76,61 @@
         <span>Arduino + p5.js + videogame</span>
       </div>
 
-      <!-- ✅ Imágenes: ruta absoluta -->
-      <div class="project-cover">
-        <img src="/imagenes/proyecto-1-cover.jpg" alt="ALE-G cover" />
+      <!-- =============================================
+           FOTO PRINCIPAL (PORTADA)
+           Es la misma que aparece en la página de inicio
+      ============================================= -->
+      <div class="image-with-caption">
+        <img src="/imagenes/proyecto-1-cover.jpg" alt="ALE-G - Artificial Life Ecosystem Game" />
+        <div class="image-caption">
+          ALE-G gameplay interface / Biohybrid controller. Image credit: Sara Gaviria Escobar
+        </div>
       </div>
 
+      <!-- =============================================
+           DESCRIPCIÓN EN INGLÉS Y ESPAÑOL
+      ============================================= -->
       <div class="project-body">
         <section>
-          <h2>About ALE-G</h2>
-          <p>[Tu texto aquí]</p>
+          <p>
+            ALE-G is an artificial life ecosystem game that invites players to spend one minute inside a digital terrarium, and then live with the consequences of their choices. Inspired by Game of Life, Lenia, Undertale and other works that question player's ethical choices and blur the line between play and system thinking, the game simulates a living terrarium with twelve common species across plants, bacteria, fungi, and insects. Temperature, humidity, and pH shift in response to player actions, affecting the creature's metabolism, movement, and reproduction. An integrated recovery time equation based on real forest ecosystem data calculates how long the ecosystem takes to return to balance, revealing the weight of human intervention on a small scale that mirrors the planetary one. ALE-G is built in p5.js as open-source code, and was accompanied by a biohybrid controller built with arduino components and a bacterial cellulose cover, making the act of playing physically entangled with living matter. Rather than rewarding victory, the game asks: what does it mean to test, probe, and manipulate the more-than-human out of curiosity? And can we learn to interact without disconnecting?
+          </p>
+          <p style="margin-top: 24px;">
+            ALE-G es un juego de ecosistema de vida artificial que invita a los jugadores a pasar un minuto dentro de un terrario digital y luego vivir con las consecuencias de sus decisiones. Inspirado en Game of Life, Lenia, Undertale y otros trabajos que cuestionan las decisiones éticas del jugador y difuminan la línea entre el juego y el pensamiento sistémico, el juego simula un terrario vivo con doce especies comunes de plantas, bacterias, hongos e insectos. La temperatura, la humedad y el pH cambian según las acciones del jugador, afectando el metabolismo, el movimiento y la reproducción de las criaturas. Una ecuación integrada de tiempo de recuperación, basada en datos reales de ecosistemas forestales, calcula cuánto tarda el ecosistema en volver al equilibrio, revelando el peso de la intervención humana a pequeña escala como reflejo de la planetaria. ALE-G está construido en p5.js como código abierto, y fue acompañado por un controlador biohíbrido construido con componentes de Arduino y una cubierta de celulosa bacteriana, haciendo que el acto de jugar quede físicamente entrelazado con materia viva. En lugar de premiar la victoria, el juego pregunta: ¿qué significa probar, sondear y manipular lo más-que-humano por curiosidad? ¿Y podemos aprender a interactuar sin desconectarnos?
+          </p>
         </section>
+      </div>
 
-        <img src="/imagenes/proyecto-1-proceso.jpg" alt="Process" />
-        <img src="/imagenes/proyecto-1-resultado.jpg" alt="Result" />
+      <!-- =============================================
+           DOS FOTOS DE PROCESO (una al lado de la otra)
+           Tamaño más pequeño que la portada
+      ============================================= -->
+      <div class="process-grid">
+        <div class="image-with-caption">
+          <img src="/imagenes/proyecto-1-proceso-1.jpg" alt="ALE-G process - Arduino prototype" />
+          <div class="image-caption">
+            Biohybrid controller prototype with Arduino components. Image credit: Sara Gaviria Escobar
+          </div>
+        </div>
+        <div class="image-with-caption">
+          <img src="/imagenes/proyecto-1-proceso-2.jpg" alt="ALE-G process - Bacterial cellulose cover" />
+          <div class="image-caption">
+            Bacterial cellulose cover for the controller. Image credit: Sara Gaviria Escobar
+          </div>
+        </div>
+      </div>
+
+      <!-- =============================================
+           VIDEO CORTO AL FINAL
+      ============================================= -->
+      <div class="video-container">
+        <video controls autoplay muted loop playsinline>
+          <source src="/videos/proyecto-1-demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="image-caption" style="margin-top: 12px;">
+          ALE-G gameplay demo / Biohybrid controller in action. Video credit: Sara Gaviria Escobar
+        </div>
       </div>
 
     </article>
