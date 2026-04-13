@@ -138,7 +138,10 @@
             <!-- =============================================
            EMBED DE P5.JS (iframe)
       ============================================= -->
-    <div class="p5-embed-option" style="margin: 60px 0 40px;">
+        <!-- =============================================
+           P5.JS EMBED - TAMAÑO FORZADO 1000x800
+      ============================================= -->
+      <div class="p5-embed-option" style="margin: 60px 0 40px;">
         <h2 style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 400; margin-bottom: 15px;">
           🎮 Play ALE-G
         </h2>
@@ -146,12 +149,12 @@
           Experience the artificial life ecosystem game right here. Click, tap, and interact with the terrarium.
         </p>
         
-        <!-- Contenedor para canvas 1000x800 -->
-        <div style="position: relative; width: 100%; max-width: 1000px; margin: 0 auto;">
-          <div style="position: relative; padding-bottom: 80%; height: 0; overflow: hidden; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.1); background: #1a1a1a;">
+        <!-- Contenedor con scroll horizontal si es necesario -->
+        <div style="width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.1); background: #1a1a1a;">
+          <div style="min-width: 1000px; width: 1000px; height: 800px;">
             <iframe 
               src="https://editor.p5js.org/saragaviria99/full/1JdW6t0F3"
-              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+              style="width: 1000px; height: 800px; border: none; display: block;"
               allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen>
             </iframe>
@@ -159,7 +162,7 @@
         </div>
         
         <div class="image-caption" style="margin-top: 16px;">
-          🕹️ Interactive p5.js game (1000x800 canvas). Click inside the game to interact with the ecosystem.
+          🕹️ Interactive p5.js game (1000x800 canvas). Scroll horizontally on mobile devices to see the full game.
         </div>
       </div>
 <!-- ============================================= fin de la página - no modificar  -->
