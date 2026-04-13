@@ -138,30 +138,31 @@
             <!-- =============================================
            EMBED DE P5.JS (iframe)
       ============================================= -->
-       <!-- Contenedor con scroll horizontal obligatorio -->
-<div style="margin: 60px 0 40px;">
-  <h2 style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 400; margin-bottom: 15px;">
-    🎮 Play ALE-G
-  </h2>
-  <p style="font-size: 0.85rem; color: var(--gray-text); margin-bottom: 20px;">
-    Experience the artificial life ecosystem game right here.
-  </p>
-  
-  <!-- Scroll horizontal forzado -->
-  <div style="width: 100%; overflow-x: scroll; overflow-y: hidden; -webkit-overflow-scrolling: touch;">
-    <iframe 
-  src="https://editor.p5js.org/saragaviria99/sketches/1JdW6t0F3/embed"
-  width="1000" 
-  height="800" 
-  style="border: none; display: block; max-width: 100%; height: auto;"
-  allowfullscreen>
-</iframe>
-  </div>
-  
-  <div class="image-caption" style="margin-top: 16px;">
-    🕹️ Use horizontal scroll to see the full game (1000x800 canvas)
-  </div>
-</div>
+      <div class="p5-embed-option" style="margin: 60px 0 40px;">
+        <h2 style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 400; margin-bottom: 15px;">
+          🎮 Play ALE-G
+        </h2>
+        <p style="font-size: 0.85rem; color: var(--gray-text); margin-bottom: 20px; line-height: 1.6;">
+          Experience the artificial life ecosystem game right here.
+        </p>
+        
+        <!-- 
+          La clave está en usar la URL con "/present/" en lugar de "/full/"
+          y forzar el tamaño exacto de tu canvas (1000x800)
+        -->
+        <iframe 
+          src="https://editor.p5js.org/saragaviria99/present/1JdW6t0F3"
+          width="1000" 
+          height="800" 
+          style="border: none; display: block; margin: 0 auto; max-width: 100%; height: auto;"
+          allow="fullscreen; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+        
+        <div class="image-caption" style="margin-top: 16px;">
+          🕹️ Interactive p5.js game (1000x800 canvas)
+        </div>
+      </div>
 <!-- ============================================= fin de la página - no modificar  -->
       
     </article>
