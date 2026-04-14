@@ -1,6 +1,5 @@
 /* =============================================
-   VARIABLES GLOBALES — aquí controlas los colores
-   y fuentes de TODO el sitio desde un solo lugar
+   editar fuentes y colores de toda la página web
    ============================================= */
 :root {
   --white: #ffffff;
@@ -129,7 +128,7 @@ img {
 }
 
 /* =============================================
-   HEADER / HERO
+   HEADER
    ============================================= */
 .hero {
   margin-bottom: 70px;
@@ -225,7 +224,7 @@ img {
 }
 
 /* =============================================
-   PÁGINAS DE PROYECTO (project-page)
+   PÁGINAS DE PROYECTO
    ============================================= */
 .project-page {
   max-width: 800px;
@@ -317,7 +316,7 @@ img {
 }
 
 /* =============================================
-   PÁGINA ABOUT ME
+   PÁGINA PERFIL "ABOUT ME"
    ============================================= */
 .about-page {
   max-width: 720px;
