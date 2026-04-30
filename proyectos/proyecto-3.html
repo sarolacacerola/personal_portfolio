@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ALE-G</title>
+  <title>La Enredadera & co.</title>
   <link rel="stylesheet" href="/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
   <style>
@@ -39,6 +39,21 @@
       border-radius: 4px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
+    .project-link {
+      display: inline-block;
+      margin: 20px 0 10px;
+      padding: 10px 20px;
+      background-color: #e8e6e1;
+      color: #2c2c2c;
+      text-decoration: none;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      border-radius: 30px;
+      transition: background-color 0.2s ease;
+    }
+    .project-link:hover {
+      background-color: #d4cfc7;
+    }
     @media (max-width: 700px) {
       .process-grid {
         grid-template-columns: 1fr;
@@ -71,18 +86,24 @@
       <h1>La Enredadera & co.</h1>
 
       <div class="project-meta">
-        <span>2025</span>
+        <span>2020 — Present</span>
         <span>Science communication + Community-centered project</span>
+      </div>
+
+      <!-- VISIT WEBSITE BUTTON / LINK -->
+      <div style="text-align: center; margin: 20px 0 30px;">
+        <a href="https://www.laenredadera.co/quesomos" target="_blank" class="project-link" rel="noopener noreferrer">
+          🌿 Visit our website → laenredadera.co
+        </a>
       </div>
 
       <!-- =============================================
            FOTO PRINCIPAL/PORTADA
-           (la misma que aparece en la página de inicio)
       ============================================= -->
       <div class="image-with-caption">
-        <img src="/imagenes/aleg.png" alt="ALE-G - Artificial Life Ecosystem Game" />
+        <img src="/imagenes/logo_laepng" alt="La Enredadera & co. Logo" />
         <div class="image-caption">
-          ALE-G gameplay interface and Biohybrid controller. Image credit: Laurie Camelot
+          Our logo. Designed by: Natalia Hernández
         </div>
       </div>
 
@@ -93,67 +114,57 @@
         <section>
            <h2>English</h2>
           <p>
-            ALE-G is an artificial life ecosystem game that invites players to spend one minute inside a digital terrarium, and then live with the consequences of their choices. Inspired by Game of Life, Lenia, Undertale and other works that question player's ethical choices and blur the line between play and system thinking, the game simulates a living terrarium with twelve common species across plants, bacteria, fungi, and insects. Temperature, humidity, and pH shift in response to player actions, affecting the creature's metabolism, movement, and reproduction. An integrated recovery time equation based on real forest ecosystem data calculates how long the ecosystem takes to return to balance, revealing the weight of human intervention on a small scale that mirrors the planetary one. ALE-G is built in p5.js as open-source code, and was accompanied by a biohybrid controller built with arduino components and a bacterial cellulose cover, making the act of playing physically entangled with living matter. Rather than rewarding victory, the game asks: what does it mean to test, probe, and manipulate the more-than-human out of curiosity? And can we learn to interact without disconnecting?
+La Enredadera & co. is a collective creation space that seeks to democratise academic knowledge. We narrate scientific discoveries 
+            through podcasts, videos, magazines and texts, sharing our awe for nature and our wishes to connect with it further.
           </p>
-          <p style="margin-top: 24px;">
-          <h2>Español</h2>
           <p>
-            ALE-G es un juego de ecosistema de vida artificial que invita a los jugadores a pasar un minuto dentro de un terrario digital y luego vivir con las consecuencias de sus decisiones. Inspirado en Game of Life, Lenia, Undertale y otros trabajos que cuestionan las decisiones éticas del jugador y difuminan la línea entre el juego y el pensamiento sistémico, el juego simula un terrario vivo con doce especies comunes de plantas, bacterias, hongos e insectos. La temperatura, la humedad y el pH cambian según las acciones del jugador, afectando el metabolismo, el movimiento y la reproducción de las criaturas. Una ecuación integrada de tiempo de recuperación, basada en datos reales de ecosistemas forestales, calcula cuánto tarda el ecosistema en volver al equilibrio, revelando el peso de la intervención humana a pequeña escala como reflejo de la planetaria. ALE-G está construido en p5.js como código abierto, y fue acompañado por un controlador biohíbrido construido con componentes de Arduino y una cubierta de celulosa bacteriana, haciendo que el acto de jugar quede físicamente entrelazado con materia viva. En lugar de premiar la victoria, el juego pregunta: ¿qué significa probar, sondear y manipular lo más-que-humano por curiosidad? ¿Y podemos aprender a interactuar sin desconectarnos?
+We feel that science has become closed off, overly intellectualised, and unnecessarily complicated. Too often, it speaks a language
+            that excludes the very people who live alongside the ecosystems being studied. That is why we create open-access content
+            in Spanish, focusing on Colombia's biodiversity, local initiatives, specific scenarios, and the communities that inhabit
+            them. We believe that knowledge should not be locked behind paywalls or academic jargon.
+          </p>
+          <p>
+Born in 2020 as a science communication initiative driven by curiosity, La Enredadera & co. has since grown like a climbing vine, 
+            expanding into stories that reconnect us with ourselves through the mystery and beauty of the more-than-human life that
+            surrounds us.
+          </p>
+          <p>
+The collective is formed by me (Biologist), Santiago Córdoba (Anthropologist and Biologist), and Luis Carlos Posso (Psychologist, 
+            MSc in Biodiversity Conservation). Together, we collaborate, coexist, learn, and seek to become fertile ground for 
+            other initiatives and curious minds. We work with public libraries, universities, publishers, cultural collectives, 
+            and government entities in Colombia through workshops, digital exhibitions, publications, and audio content.
+          </p>
+
+          <h2 style="margin-top: 32px;">Español</h2>
+          <p>
+La Enredadera & co. es un espacio de creación colectiva que busca democratizar el saber académico. Narramos descubrimientos 
+            científicos a través de podcasts, videos, revistas y textos, compartiendo nuestro asombro por la naturaleza y nuestro 
+            deseo de conectarnos más profundamente con ella.
+          </p>
+          <p>
+Sentimos que la ciencia se ha vuelto cerrada, excesivamente intelectualizada e innecesariamente complicada. Con demasiada frecuencia
+            habla un lenguaje que excluye a las mismas personas que habitan junto a los ecosistemas que se estudian. Por eso 
+            creamos contenido de acceso abierto en español, enfocándonos en la biodiversidad de Colombia, sus iniciativas locales, 
+            escenarios concretos y las comunidades que los habitan. Creemos que el conocimiento no debería estar encerrado detrás 
+            de muros de pago ni de jerga académica.
+          </p>
+          <p>
+Nacida en 2020 como una iniciativa de divulgación científica impulsada por la curiosidad, La Enredadera & co. ha crecido como una 
+            enredadera que trepa y se enmaraña, expandiéndose hacia historias que nos reconectan con nosotros mismos a través del 
+            misterio y la belleza de la vida más-que-humana que nos rodea.
+          </p>
+          <p>
+El colectivo está formado por mí (Bióloga), Santiago Córdoba (Antropólogo y Biólogo) y Luis Carlos Posso (Psicólogo, MSc en 
+            Conservación de Biodiversidad). Juntos colaboramos, coexistimos, aprendemos y buscamos ser suelo fértil para otras 
+            iniciativas y mentes curiosas. Trabajamos con bibliotecas públicas, universidades, editoriales, colectivos culturales 
+            y entidades gubernamentales en Colombia a través de talleres, exposiciones digitales, publicaciones y contenido sonoro.
           </p>
         </section>
       </div>
 
-      <!-- =============================================
-           DOS FOTOS DE PROCESO
+      <!-- ============================================= 
+           FIN DE LA PÁGINA - NO MODIFICAR DE ACÁ PARA ABAJO  
       ============================================= -->
-      <div class="process-grid">
-        <div class="image-with-caption">
-          <img src="/imagenes/alegcontrol1.png" alt="ALE-G process - Arduino prototype" />
-          <div class="image-caption">
-            Biohybrid controller prototype with Arduino components. Image credit: Sara Gaviria Escobar
-          </div>
-        </div>
-        <div class="image-with-caption">
-          <img src="/imagenes/alegcontrol2.png" alt="ALE-G process - Bacterial cellulose cover" />
-          <div class="image-caption">
-            Biohybrid controller prototype. Image credit: Sara Gaviria Escobar
-          </div>
-        </div>
-      </div>
-
-      <!-- =============================================
-           VIDEO 
-      ============================================= -->
-      <div class="video-container">
-        <video controls autoplay muted loop playsinline>
-          <source src="/imagenes/ale_g_video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <div class="image-caption" style="margin-top: 12px;">
-          ALE-G trailer video, created for the submission of the Biological Interfaces Project for MA Biodesign. Edited by Sara Gaviria Escobar. Music: "Heliosphan" by Aphex Twin.
-        </div>
-      </div>
-
-                <!-- =============================================
-           P5.JS EMBED (EL SKETCH TIENE canvas de 800x550)
-      ============================================= -->
-    <div style="margin: 60px 0 40px; text-align: center;">
-        <h2 style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 400; margin-bottom: 15px;">
-          Play ALE-G
-        </h2>
-        
-        <!-- Contenedor que centra el iframe y permite scroll si es necesario -->
-        <div style="display: flex; justify-content: center; width: 100%;">
-          <iframe 
-            src="https://editor.p5js.org/saragaviria99/full/1JdW6t0F3"
-            width="800" 
-            height="600" 
-            style="border: none; display: block; box-shadow: 0 2px 12px rgba(0,0,0,0.1); border-radius: 8px;"
-            allowfullscreen>
-          </iframe>
-        </div>
-
-<!-- ============================================= FIN DE LA PÁGINA - NO MODIFICAR DE ACÁ PARA ABAJO  -->
       
     </article>
   </main>
